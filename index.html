@@ -22,14 +22,14 @@
     </div>
   </div>
   <div class="changelog">
-    <h3>CHANGELOG:</h3>
-    <p>Moze kiedys </p>
+    <ul><h3>CHANGELOG:</h3></ul>
+    <label for="li">15.01.2025</label>
+    <li>Release</li>
   </div>
-   <script>
+<script>
     function clockUpdate() {
     let clock = document.getElementById("clock");
     let now = new Date();
-
     let hour = String(now.getHours()).padStart(2, "0");
     let minute = String(now.getMinutes()).padStart(2, "0");
     let second = String(now.getSeconds()).padStart(2, "0");
