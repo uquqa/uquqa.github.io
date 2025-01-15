@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  .clock{
+    margin: 0;
+    width: 200px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+  .solar_links {
+    position: relative;
+    width: 500px;
+    height: 500px;
+  }
+  /* Zdjęcie w środku orbity */
+  .pfp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    background-image: url(/github/spin/assets/pfp_bully.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+  }
+  
+  /* Okrąg, na którym krążą kółka */
+  .orbita {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+  }
+  
+  /* Stylizacja dla każdego kółka */
+  .link {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Format kazdego kolka z osobna */
+  .link.red {
+    top: 0;
+    left: 50%;
+    background-image: url(assets/Youtube_logo.jpg);
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .link.lightblue {
+    top: 25%;
+    left: 94%;
+    background-image: url(assets/tt_logo.jpg);
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .link.magenta {
+    top: 75%; 
+    left: 6%;
+    background-image: url(assets/ig_logo.jpg);
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .link.gray {
+    top: 25%;
+    left: 6%;
+    background-image: url(assets/steam_logo.jpg);
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  .link.purple {
+    top: 75%;
+    left: 94%;
+    background-image: url(assets/logo-twitcha_578229-259.jpg);
+    background-size: cover; 
+    background-position: center; 
+  }
+  .link.green {
+    top: 100%;
+    left: 50%;
+    background-image: url(assets/spotify_logo.jpg);
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  /* Animacja obracania wokół okręgu */
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  .changelog{
+    width: 150px;
+    height: 50px;
+    color: white;
+    float: left;
+    position: absolute;
+    top: 500px;
+    left: 0px;
+  }
+  

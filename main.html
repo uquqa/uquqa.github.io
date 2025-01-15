@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>q</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="clock" id="clock">
+    
+  </div>
+  <div class="solar_links">
+    <div class="pfp"></div>
+    <div class="orbita">
+      <a href="https://www.youtube.com/channel/UCTQks-XB4X_aPYWWUJYrUBg" class="link red"></a>
+      <a href="https://twitter.com/uquqa777" class="link lightblue"></a>
+      <a href="https://www.instagram.com/uquqa777" class="link magenta"></a>
+      <a href="https://steamcommunity.com/id/uquqa/" class="link gray"></a>
+      <a href="http://twitch.tv/uquqa" class="link purple"></a>
+      <a href="https://open.spotify.com/user/6uk2nxdsb27yyxm9jb472szs8?si=2022731adc094c0a" class="link green"></a>
+    </div>
+  </div>
+  <div class="changelog">
+    <h3>CHANGELOG:</h3>
+    <p>Moze kiedys </p>
+  </div>
+   <script>
+    function clockUpdate() {
+    let clock = document.getElementById("clock");
+    let now = new Date();
+
+    let hour = String(now.getHours()).padStart(2, "0");
+    let minute = String(now.getMinutes()).padStart(2, "0");
+    let second = String(now.getSeconds()).padStart(2, "0");
+    let milisecond = String(now.getMilliseconds()).padStart(3, "0")
+
+    clock.innerHTML = `${hour} ${minute} ${second} ${milisecond}`;
+    }
+    setInterval(clockUpdate, 1);
+    clockUpdate();
+</script>
+</body>
+</html>
