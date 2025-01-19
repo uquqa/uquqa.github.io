@@ -8,17 +8,17 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MZL92GLS');</script>
   <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>q</title>
+  <title>prod. uquqa</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/pfp_bully.jpg">
 </head>
 <body>
   <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZL92GLS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZL92GLS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div class="clock" id="clock">
     
   </div>
@@ -34,23 +34,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
   <div class="changelog">
-    <ul><h3>CHANGELOG:</h3></ul>
-    <label for="li">15.01.2025</label>
-    <li>Release</li>
+    <ul ><h3>CHANGELOG:</h3>
+      <label for="li">15 01 2025</label>
+      <li>Release</li>
+      <label for="li">19 01 2025</label>
+      <li>Minor visual fixes</li>
+      <li>Changed site's title</li>
+    </ul>
   </div>
-<script>
+  
+  <script>
+    // clock
     function clockUpdate() {
-    let clock = document.getElementById("clock");
-    let now = new Date();
-    let hour = String(now.getHours()).padStart(2, "0");
-    let minute = String(now.getMinutes()).padStart(2, "0");
-    let second = String(now.getSeconds()).padStart(2, "0");
-    let milisecond = String(now.getMilliseconds()).padStart(3, "0")
-
-    clock.innerHTML = `${hour} ${minute} ${second} ${milisecond}`;
+      let clock = document.getElementById("clock");
+      let now = new Date();
+      let hour = String(now.getHours()).padStart(2, "0");
+      let minute = String(now.getMinutes()).padStart(2, "0");
+      let second = String(now.getSeconds()).padStart(2, "0");
+      let milisecond = String(now.getMilliseconds()).padStart(3, "0");
+  
+      clock.innerHTML = `${hour} ${minute} ${second} ${milisecond}`;
     }
     setInterval(clockUpdate, 1);
     clockUpdate();
-</script>
+  </script>
+  
+
 </body>
 </html>
